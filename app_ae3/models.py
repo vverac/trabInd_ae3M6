@@ -10,9 +10,6 @@ class Cliente(models.Model):
   # def __init__(self, nombre, edad):
       nombre = models.CharField(max_length=200)
       edad = models.CharField(max_length=200)
-   
-    # def publish(self):
-    #  pass
 
       def __str__(self):
         return self.nombre

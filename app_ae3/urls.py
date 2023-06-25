@@ -4,5 +4,6 @@ from . import views
 from app_ae3.views import IndexView
 
 urlpatterns = [
-   path('', IndexView.as_view())
+   path('', IndexView.as_view()),
+   
 ]
