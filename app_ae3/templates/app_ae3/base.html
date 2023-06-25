@@ -33,7 +33,7 @@
   <!-- Navbar Start -->
   <div class="container-fluid p-0 nav-bar">
     <nav class="navbar navbar-expand-lg py-3" style="
-    background-color: #110e0f;
+    background-color: #110e0f; margin-bottom: '10px';
 ">
       <a href="index.html" class="navbar-brand px-lg-4 m-0">
         <h1 class="m-0 display-4  text-primary">At-Coffe</h1>
@@ -44,7 +44,7 @@
       <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
         <div class="navbar-nav ml-auto p-4">
           <a href="index.html" class="nav-item nav-link active">Home</a>
-          <a href="about.html" class="nav-item nav-link">About</a>
+          <a href={% url 'registroCliente' %} class="nav-item nav-link">Registrar Cliente</a>
           <a href="service.html" class="nav-item nav-link">Service</a>
           <a href="menu.html" class="nav-item nav-link">Menu</a>
           <div class="nav-item dropdown">

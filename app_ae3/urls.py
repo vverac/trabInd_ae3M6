@@ -5,5 +5,6 @@ from app_ae3.views import IndexView
 
 urlpatterns = [
    path('', IndexView.as_view()),
-   
+   path('registroCliente/', views.formularioRegistroCliente, name='registroCliente'),
+   path('success/', views.success, name='success'),
 ]

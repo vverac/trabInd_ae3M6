@@ -1,0 +1,26 @@
+{% extends 'app_ae3/base.html' %} {% load static %} {% block contenido %}
+
+<h1 class="titulo mt-5" style="margin-top: 5rem!important;">Registrar Datos Cliente</h1>
+<div class="container">
+  <form action="" method="POST">
+    {% csrf_token %}
+
+    <div class="form-group">
+      <label for="nombre">Nombre</label>
+      {{form.nombre}}
+    </div>
+
+    <div class="form-group">
+      <label for="direccion">direccion</label>
+      {{form.direccion}}
+    </div>
+
+    <div class="form-group">
+      <label for="email">Email</label>
+      {{form.email}}
+    </div>
+
+    <button type="Submit" class="btn btn-primary">Enviar</button>
+  </form>
+</div>
+{% endblock %}

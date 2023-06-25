@@ -13,3 +13,11 @@ class Cliente(models.Model):
 
       def __str__(self):
         return self.nombre
+
+class RegistroCliente(models.Model):
+    nombre = models.CharField(max_length=100)
+    direccion = models.CharField(max_length=100)
+    email = models.EmailField()
+
+    def __str__(self):
+     return self.nombre
