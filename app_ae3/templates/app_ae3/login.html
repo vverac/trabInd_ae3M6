@@ -1,0 +1,15 @@
+{% extends 'app_ae3/base.html' %} {% block contenido %} {% if form.errors %}
+<h4>Los Datos de autencticación no correspoden. Intenta nuevamente.</h4>
+{% endif %} {% if next %} {% if user.is_authenticated %}
+<h4>Tu cuenta no tiene acceso a este recurso</h4>
+<p>Debes tener los privilegios, contacta al administrador</p>
+{% else %}
+<p>Debes autenticarte para acceder a este sitio</p>
+{% endif %} {% endif %}
+<form method="post" action="{% url 'login' %}" style="padding-top: 200px">
+  {% csrf_token%} {{ form.as_p }}
+  <input type="submit" class="btn btn-primary" value="Login" />
+  <input type="hidden" name="next" value="{{next}}" />
+  {% comment %} <button type="submit">Iniciar Sesión</button> {% endcomment %}
+</form>
+{% endblock %}

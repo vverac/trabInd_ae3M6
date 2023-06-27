@@ -7,4 +7,6 @@ urlpatterns = [
    path('', IndexView.as_view()),
    path('registroCliente/', views.formularioRegistroCliente, name='registroCliente'),
    path('success/', views.success, name='success'),
+   path('login/', views.login, name='login'),
+   path('home/', views.home, name='home'),
 ]

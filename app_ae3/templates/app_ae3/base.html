@@ -31,10 +31,9 @@
 
 <body>
   <!-- Navbar Start -->
-  <div class="container-fluid p-0 nav-bar">
-    <nav class="navbar navbar-expand-lg py-3" style="
-    background-color: #110e0f; margin-bottom: '10px';
-">
+  <div class="container-fluid p-0 nav-bar ">
+    <nav class="navbar navbar-expand-lg" style="
+    background-color: #110e0f; margin-bottom: '10px';">
       <a href="index.html" class="navbar-brand px-lg-4 m-0">
         <h1 class="m-0 display-4  text-primary">At-Coffe</h1>
       </a>
@@ -44,8 +43,8 @@
       <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
         <div class="navbar-nav ml-auto p-4">
           <a href="index.html" class="nav-item nav-link active">Home</a>
-          <a href={% url 'registroCliente' %} class="nav-item nav-link">Registrar Cliente</a>
-          <a href="service.html" class="nav-item nav-link">Service</a>
+          <a class="nav-item nav-link" href={% url 'registroCliente' %}>Registrar Cliente</a>
+          <a href={% url 'login' %} class="nav-item nav-link">Login</a>
           <a href="menu.html" class="nav-item nav-link">Menu</a>
           <div class="nav-item dropdown">
             <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Pages</a>
@@ -65,10 +64,10 @@
   {% block destacados %}{% endblock %}
 
   <!-- Footer Start -->
-  <footer>
-    <div class="container-fluid foot text-white mt-5 pt-5 px-0 position-relative overlay-top" style="
+  <footer style="margin-top: 60px;">
+    <div class="container-fluid foot text-white  px-0 position-relative overlay-top" style="
     background-color: #110e0f;">
-      <div class="row foot mx-0 pt-5 px-sm-3 px-lg-5 mt-4">
+      <div class="row foot mx-0 pt-5 px-sm-3 px-lg-5">
         <div class="col-lg-3 col-md-6 mb-5">
           <h4 class="text-white text-uppercase mb-4" style="letter-spacing: 3px;">Contactanos en:</h4>
           <p><i class="fa fa-map-marker-alt mr-2"></i>123 Calle, Temuco, CHILE</p>
