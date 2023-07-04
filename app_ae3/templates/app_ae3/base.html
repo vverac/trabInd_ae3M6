@@ -5,7 +5,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>KOPPEE - Coffee Shop</title>
+  <title>AT - Coffe </title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta content="Free Website Template" name="keywords">
   <meta content="Free Website Template" name="description">
@@ -44,7 +44,20 @@
         <div class="navbar-nav ml-auto p-4">
           <a href="index.html" class="nav-item nav-link active">Home</a>
           <a class="nav-item nav-link" href={% url 'registroCliente' %}>Registrar Cliente</a>
-          <a href={% url 'login' %} class="nav-item nav-link">Login</a>
+          {% comment %} <a href={% url 'login' %} class="nav-item nav-link">Login</a>
+          <a href={% url 'logout' %} class="nav-item nav-link">Logout</a> {% endcomment %}
+
+        {% if user.is_authenticated %}
+          </li>
+            <li class="nav-item">
+           <a class="nav-link" href={% url 'logout' %}>Logout</a>
+          </li>
+        {% else %} 
+          <li class="nav-item">
+            <a class="nav-link" href={% url 'login' %}>Login</a>
+          </li>
+        {% endif %}
+
           <a href="menu.html" class="nav-item nav-link">Menu</a>
           <div class="nav-item dropdown">
             <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Pages</a>
