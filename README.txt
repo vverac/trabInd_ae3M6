@@ -1,6 +1,6 @@
 # Curso: Desarrollo de Aplicaciones Fullstack Python Trainee v2.0
 
-Proyecto Grupal Módulo 6 del Grupo 2
+Proyecto Individual Módulo 6
 
 ## Instrucciones para unirse el proyecto:
 
@@ -9,7 +9,7 @@ Proyecto Grupal Módulo 6 del Grupo 2
 2. Hacer un repositorio de GIT en dicha carpeta:
    - `git init`
 3. Añadir el acceso al repositorio en línea:
-   - `git remote add origin https://github.com/vverac/Trabajo_grupal`
+   - `git remote add origin https://github.com/vverac/trabInd_ae3M6`
 4. Hacer una solicitud de 'pull' al repositorio en línea:
    - `git pull origin main`
 5. Crear un entorno virtual:
